@@ -14,3 +14,6 @@ Recording an example of comparing two nested json files stylish format:
 
 Recording an example of comparing two nested json files in plain format:
 [![asciicast](https://asciinema.org/a/L4dFPH8WyuxQ1U7Ja1F9TU1fz.svg)](https://asciinema.org/a/L4dFPH8WyuxQ1U7Ja1F9TU1fz)
+
+Recording an example of comparing two nested json files in json format:
+[![asciicast](https://asciinema.org/a/yU2zsIVDNUr8jRxfcuw8c4nJC.svg)](https://asciinema.org/a/yU2zsIVDNUr8jRxfcuw8c4nJC)
