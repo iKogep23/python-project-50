@@ -8,8 +8,7 @@ UNCHANGED = 'unchanged'
 
 def compare_data(data1, data2):
     diff = {}
-    keys1, keys2 = set(data1.keys()), set(data2.keys())
-    combained_keys = sorted(keys1 | keys2)
+    combained_keys = sorted(set(data1.keys()) | set(data2.keys()))
     for key in combained_keys:
         if key not in data1 and key in data2:
             diff[key] = {
