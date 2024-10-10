@@ -33,7 +33,8 @@ If your system refuses to install the package, one way out is to install this pa
 ### Help output
 ___
 To display help on using the utility, you need to run it with the -h parameter:
-`gendiff -h
+```
+gendiff -h
 usage: gendiff [-h] [-f {stylish,plain,json}] first_file second_file
 
 Compares two configuration files and shows a difference.
@@ -47,7 +48,8 @@ options:
   -f {stylish,plain,json}, --format {stylish,plain,json}
                         set format of output: stylish, plain or json
 
-gendiff created by Bessonov Igor`
+gendiff created by Bessonov Igor
+```
 
 ### Examples of use:
 Recording an example of comparing two simple json files stylish format:
