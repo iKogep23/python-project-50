@@ -52,6 +52,7 @@ gendiff created by Bessonov Igor
 ```
 
 ### Examples of use:
+___
 Recording an example of comparing two simple json files stylish format:
 [![asciicast](https://asciinema.org/a/4HtEexWL25M1NnNP8vH4K6PPx.svg)](https://asciinema.org/a/4HtEexWL25M1NnNP8vH4K6PPx)
 
