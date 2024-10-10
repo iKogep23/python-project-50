@@ -3,14 +3,14 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/97d4cbb0ee75dbc0acf2/maintainability)](https://codeclimate.com/github/iKogep23/python-project-50/maintainability)
 [![Python CI](https://github.com/iKogep23/python-project-50/actions/workflows/pyci.yml/badge.svg)](https://github.com/iKogep23/python-project-50/actions/workflows/pyci.yml)
 
-### Difference calculator
+### Difference calculator:
 ___
 Gendiff is a command line utility for calcule differencies between two configuration files.
 The tool analyzes the files and displays the differences in a human-readable format.
 It supports JSON, YAML and YML file formats.
 The result can be presented in the following formats: stylish, json and plain.
 
-### Dependencies
+### Dependencies:
 ___
 This package requires the following dependencies:
 
@@ -19,18 +19,18 @@ This package requires the following dependencies:
 
 To install them run make install command.
 
-### Installation
+### Installation:
 ___
     - Run make package-install to install this package. Run make build to build the project.
 
-### Installation to a virtual environment
+### Installation to a virtual environment:
 ___
 If your system refuses to install the package, one way out is to install this package in a virtual environment.
 
     - Run python3 -m venv environment_name to build a python venv. Make virtual environment outside of the project.
     - Run environment_name/bin/pip3 install python-project-50/dist/*.whl to install this package to a virtual environment you just created.
 
-### Help output
+### Help output:
 ___
 To display help on using the utility, you need to run it with the -h parameter:
 ```
