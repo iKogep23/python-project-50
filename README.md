@@ -22,7 +22,7 @@ To install them run make install command.
 ### Installation:
 ___
     - Run make package-install to install this package.
-      Run make build to build the project.
+    - Run make build to build the project.
 
 ### Installation to a virtual environment:
 ___
