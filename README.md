@@ -21,14 +21,17 @@ To install them run make install command.
 
 ### Installation:
 ___
-    - Run make package-install to install this package. Run make build to build the project.
+    - Run make package-install to install this package.
+      Run make build to build the project.
 
 ### Installation to a virtual environment:
 ___
 If your system refuses to install the package, one way out is to install this package in a virtual environment.
 
-    - Run python3 -m venv environment_name to build a python venv. Make virtual environment outside of the project.
-    - Run environment_name/bin/pip3 install python-project-50/dist/*.whl to install this package to a virtual environment you just created.
+    - Run python3 -m venv environment_name to build a python venv.
+      This make virtual environment outside of the project.
+    - Run environment_name/bin/pip3 install python-project-50/dist/*.whl
+      to install this package to a virtual environment you just created.
 
 ### Help output:
 ___
