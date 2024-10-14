@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from gendiff.file_reader import read_file, get_format
 from gendiff.parser import parse
 from gendiff.data_comparer import compare_data
