@@ -2,12 +2,11 @@
 import argparse
 
 
-from gendiff.gendiff import generate_diff
+from gendiff.diff import generate_diff
 
 
 def get_args():
     parser = argparse.ArgumentParser(
-        prog='gendiff',
         description='Compares two configuration files and shows a difference.',
         epilog='gendiff created by Bessonov Igor'
     )

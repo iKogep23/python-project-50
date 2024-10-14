@@ -1,5 +1,5 @@
 import pytest
-from gendiff.gendiff import generate_diff
+from gendiff.diff import generate_diff
 from gendiff.file_reader import read_file
 
 
