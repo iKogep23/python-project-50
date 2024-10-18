@@ -7,5 +7,7 @@ def parse(data, format_):
     """Parses data"""
     if format_ == 'json':
         return json.loads(data)
-    if format_ == 'yaml':
+    elif format_ == 'yaml':
         return yaml.safe_load(data)
+    else:
+        raise ValueError(f"Unsupported file format: {format_}")

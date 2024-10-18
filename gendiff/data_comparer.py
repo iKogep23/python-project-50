@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 NESTED = 'nested'
 ADDED = 'added'
 REMOVED = 'removed'
