@@ -3,12 +3,15 @@ from gendiff.formatters.stylish import format_stylish
 from gendiff.formatters.plain import format_plain
 
 
-def format_diff(diff, formatter):
+def formatter_foo(formatter):
     """Checks the file format for compliance with the formats available
     in the utility and runs the format set for this file format."""
-    if formatter == "stylish":
-        return format_stylish(diff)
-    if formatter == "json":
-        return format_json(diff)
-    if formatter == "plain":
-        return format_plain(diff)
+    match formatter:
+        case "stylish":
+            return format_stylish
+        case "json":
+            return format_json
+        case "plain":
+            return format_plain
+        case _:
+            raise ValueError(f"Unsupported file format: {formatter}")
