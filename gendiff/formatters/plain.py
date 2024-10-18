@@ -17,8 +17,7 @@ def stringify_value(value):
         return f"'{value}'"
     elif isinstance(value, dict):
         return '[complex value]'
-    else:
-        return value
+    return value
 
 
 def get_path_string(previous_path, key):

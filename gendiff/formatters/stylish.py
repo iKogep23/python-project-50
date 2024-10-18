@@ -2,11 +2,11 @@ import json
 from gendiff.data_comparer import NESTED, ADDED, REMOVED, CHANGED, UNCHANGED
 
 
-INDENT = '    '
+INDENT = ' ' * 4
 FLAGS = {
     ADDED: '  + ',
     REMOVED: '  - ',
-    UNCHANGED: '    '
+    UNCHANGED: ' ' * 4
 }
 
 
