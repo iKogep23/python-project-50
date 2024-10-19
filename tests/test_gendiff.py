@@ -1,6 +1,8 @@
 import pytest
 from gendiff.diff import generate_diff
-from gendiff.file_reader import read_file
+from gendiff.file_reader import read_file, get_format
+from gendiff.parser import parse
+from gendiff.formatters import formatter_foo
 
 
 FLAT_JSON_FILE1 = 'tests/fixtures/file1.json'
@@ -20,6 +22,21 @@ ANSWER_PLAIN_FLAT = 'tests/fixtures/answer_plain_flat'
 ANSWER_PLAIN_NESTED = 'tests/fixtures/answer_plain_nested'
 ANSWER_JSON_FLAT = 'tests/fixtures/answer_json_flat'
 ANSWER_JSON_NESTED = 'tests/fixtures/answer_json_nested'
+
+
+def test_get_format_raises_exception():
+    with pytest.raises(ValueError):
+        get_format(ANSWER_PLAIN_FLAT)
+
+
+def test_parse_raises_exception():
+    with pytest.raises(ValueError):
+        parse("some_data", "wrong_extension")
+
+
+def test_formatter_foo_exception():
+    with pytest.raises(ValueError):
+        formatter_foo("wrong_format")
 
 
 def get_answer(answer_path):
