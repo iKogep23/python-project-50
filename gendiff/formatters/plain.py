@@ -57,4 +57,5 @@ def get_message_string(diff, previous_path):
 
 
 def format_plain(diff):
+    """Converts a values in variable diff into a plain string."""
     return get_message_string(diff, previous_path='')

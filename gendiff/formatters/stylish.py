@@ -11,12 +11,14 @@ FLAGS = {
 
 
 def get_stringify_value(value):
+    """Gets a json representation of the parameter value."""
     if isinstance(value, bool) or value is None:
         return json.dumps(value)
     return value
 
 
 def stringify_value(value, depth):
+    """Returns a list of strings in json representation of the parameter value."""
     if not isinstance(value, dict):
         return get_stringify_value(value)
     string_list = ['{']
@@ -34,6 +36,8 @@ def stringify_value(value, depth):
 
 
 def stringify_diff(diff, depth):
+    """Returns a list of strings in stylish representation
+    of the values in variable diff."""
     diff_list = []
     spaces = INDENT * depth
     for key, flags in diff.items():
@@ -60,5 +64,6 @@ def stringify_diff(diff, depth):
 
 
 def format_stylish(diff, depth=0):
+    """Conversts a values in variable diff into stylish format."""
     final_list = ['{', stringify_diff(diff, depth), '}']
     return '\n'.join(final_list)

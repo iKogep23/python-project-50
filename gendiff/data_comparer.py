@@ -6,6 +6,7 @@ UNCHANGED = 'unchanged'
 
 
 def compare_data(data1, data2):
+    """Compares two sets of prepared data."""
     diff = {}
     combained_keys = sorted(set(data1.keys()) | set(data2.keys()))
     for key in combained_keys:

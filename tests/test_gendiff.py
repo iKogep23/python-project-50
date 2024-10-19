@@ -25,21 +25,25 @@ ANSWER_JSON_NESTED = 'tests/fixtures/answer_json_nested'
 
 
 def test_get_format_raises_exception():
+    """Test the exception handle in get_format function."""
     with pytest.raises(ValueError):
         get_format(ANSWER_PLAIN_FLAT)
 
 
 def test_parse_raises_exception():
+    """Test the exception handle in parse function."""
     with pytest.raises(ValueError):
         parse("some_data", "wrong_extension")
 
 
 def test_formatter_foo_exception():
+    """Test the exception handle in formatter_foo function."""
     with pytest.raises(ValueError):
         formatter_foo("wrong_format")
 
 
 def get_answer(answer_path):
+    """Reads the answer file."""
     return read_file(answer_path)
 
 
@@ -61,6 +65,7 @@ def get_answer(answer_path):
     (NESTED_YAML_FILE1, NESTED_YAML_FILE2, "json", ANSWER_JSON_NESTED),
 ])
 def test_generate_diff(filepath1, filepath2, format_name, answer):
+    """Tests a correct work of generate_diff function."""
     answer = get_answer(answer)
     l_answer = len(answer)  # length answer
     assert generate_diff(filepath1, filepath2, format_name) == answer[:l_answer - 1]

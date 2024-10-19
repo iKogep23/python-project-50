@@ -4,6 +4,7 @@ from gendiff.diff import generate_diff
 
 
 def get_args():
+    """Processes the arguments transmitted to the program."""
     parser = argparse.ArgumentParser(
         prog='gendiff',
         description='Compares two configuration files and shows a difference.',
