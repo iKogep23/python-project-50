@@ -18,7 +18,8 @@ def get_stringify_value(value):
 
 
 def stringify_value(value, depth):
-    """Returns a list of strings in json representation of the parameter value."""
+    """Returns a list of strings in json representation
+    of the parameter values."""
     if not isinstance(value, dict):
         return get_stringify_value(value)
     string_list = ['{']
